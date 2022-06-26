@@ -10,4 +10,9 @@ class Variant extends Model
         'title', 'description'
     ];
 
+    public function product_variant()
+    {
+        return $this->hasOne('App\Models\ProductVariant');
+    }
+
 }
