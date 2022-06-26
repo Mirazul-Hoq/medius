@@ -102,7 +102,7 @@
         <div class="card-footer">
             <div class="row justify-content-between">
                 <div class="col-md-6">
-                    
+                    <p>Showing {{ $products->links()->paginator->currentPage() }} to {{ $products->links()->paginator->perPage() }} out of {{ $products->links()->paginator->total() }}</p>
                 </div>
                 <div class="col-md-2">
                     {{ $products->links() }}
